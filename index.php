@@ -20,11 +20,11 @@
       background-attachment: fixed;
       background-image:url(https://source.unsplash.com/daily/?coffee,desk,sunrise);
     }
-    div {
+    .flex-center {
       display: flex;
       justify-content: center;
     }
-    div div {
+    .bubble {
       background-color: rgba(195, 218, 254, 0.5);
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 1);
       border-radius: 9999px;
@@ -32,18 +32,23 @@
       padding-bottom: 0.5rem;
       padding-left: 2rem;
       padding-right: 2rem;
-      font-size: 4rem;
+      font-size: 2rem;
       font-weight: 700;
       font-family: sans-serif;
       color: rgba(0, 0, 0, 1);
       opacity: 1;
     }
+    @media screen and (min-width: 600px) {
+      .bubble {
+        font-size: 4rem;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div>
-    <div><?= $_SERVER['SERVER_NAME'] ?></div>
+  <div class="flex-center">
+    <div class="bubble"><?= $_SERVER['SERVER_NAME'] ?></div>
   </div>
 </body>
 
