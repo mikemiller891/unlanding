@@ -18,7 +18,7 @@
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-      background-image:url(https://source.unsplash.com/daily/?coffee,desk,sunrise);
+      background-image:url(https://source.unsplash.com/random/?river);
     }
     .flex-center {
       display: flex;
